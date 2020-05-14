@@ -11,7 +11,7 @@ parser.add_argument('--demo_flag', type=bool, default=False, help='set this to t
 parser.add_argument('--similarity_threshold', type=float, default=0.7, help='set threshold between 0.0 to 1.0 for similarity matching')
 parser.add_argument('--database_file_path', type=str, default='output.pkl', help='path to pickle file for historical data')
 parser.add_argument('--use_database_flag', type=bool, default=False, help='set this to true to use historical data processed so far with the correct database_file_path')
-parser.add_argument('--overwrite_flag', type=bool, default=False, help='set this to true to update the distorical database with the new entries')
+parser.add_argument('--overwrite_flag', type=bool, default=False, help='set this to true to update the historical database with the new entries')
 args = parser.parse_args()
 
 nlp = spacy.load("en_core_web_lg")
